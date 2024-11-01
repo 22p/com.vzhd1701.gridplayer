@@ -1,7 +1,9 @@
 app-id: "com.vzhd1701.gridplayer"
 runtime: org.kde.Platform
-runtime-version: "5.15-22.08"
+runtime-version: "5.15-23.08"
 sdk: org.kde.Sdk
+base: com.riverbankcomputing.PyQt.BaseApp
+base-version: '5.15-23.08'
 command: "gridplayer"
 finish-args:
 # OpenGL
@@ -36,7 +38,6 @@ cleanup:
 
 modules:
 - libvlc.yml
-- pyqt.yml
 - dependencies.yml
 - name: poetry-core
   buildsystem: simple
